@@ -20,6 +20,7 @@ if(isset($_POST['gravar']) && isset($_FILES['imagem'])){
 	$nova_imagem = time().rand(1000,5000).".".$info_imagem['extension']; // Nome da imagem redimensionada
 	
 	// *** Include the class
+	// ESte arquivo está no arquivo ZIPADO do artigo
 	require_once "resize2.php"; 
 
 	// *** 1) Initialise / load image
